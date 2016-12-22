@@ -4,7 +4,7 @@
  * \author FTDI
  * \date 20110505
  *
- * Copyright © 2000-2014 Future Technology Devices International Limited
+ * Copyright ? 2000-2014 Future Technology Devices International Limited
  *
  *
  * THIS SOFTWARE IS PROVIDED BY FUTURE TECHNOLOGY DEVICES INTERNATIONAL LIMITED ``AS IS'' AND ANY EXPRESS
@@ -98,9 +98,9 @@ typedef signed char   int8;
 typedef signed short  int16;
 typedef signed long long int64;
 
-#ifndef _MSC_VER
-//typedef unsigned char	bool;
-#endif
+//#ifndef _MSC_VER
+//    typedef unsigned char	bool;
+//#endif
 
 #ifdef __x86_64__
     typedef unsigned int   uint32;

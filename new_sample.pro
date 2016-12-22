@@ -32,13 +32,10 @@ HEADERS  += mainwindow.h \
 
 FORMS    += mainwindow.ui
 
-
-
-
-
-
-
-win32: LIBS += -L$$PWD/./ -llibMPSSE
+win32: LIBS += -L$$PWD/./ -lMPSSE
 
 INCLUDEPATH += $$PWD/.
 DEPENDPATH += $$PWD/.
+
+win32:!win32-g++: PRE_TARGETDEPS += $$PWD/./MPSSE.lib
+else:win32-g++: PRE_TARGETDEPS += $$PWD/./libMPSSE.a
